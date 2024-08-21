@@ -1,0 +1,346 @@
+@import url(header.css);
+@import url(footer.css);
+body {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.xphone__text h1, .xphone__text p, h2 {
+    color: #252525;
+}
+
+.xphone__text h1, .peculiarities h2, .accessories h2, .where-buy h2 {
+    font-size: 36px;
+    line-height: 43.88px;
+}
+
+.xphone__text h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.xphone__text p {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 29.26px;
+    font-weight: 400;
+}
+
+.xphone {
+    position: relative;
+    margin: 0 auto 50px;
+    width: 800px;
+    height: 600px;
+}
+
+.peculiarities, .accessories, .where-buy {
+    position: relative;
+    margin: 0 auto 50px;
+    width: 800px;
+    height: 500px;
+}
+
+.xphone__image {
+    position: absolute;
+    top: 68px;
+    left: 514px;
+    width: 203;
+    height: 464px;
+}
+
+.xphone__text {
+    position: absolute;
+    top: 157px;
+    left: 83px;
+    width: 499px;
+    height: 280px;
+}
+
+.xphone__text-btn {
+    width: 184px;
+    height: 58px;
+    background-color: #222223E5;
+    border-radius: 35px;
+    border: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.peculiarities h2, .accessories h2, .where-buy h2{
+    margin-left: 83px;
+    font-weight: 400;  
+}
+
+.peculiarities__info {
+    position: relative;
+    width: 717px;
+    height: 296px;
+    margin-top: 102px;
+    margin-left: 83px;
+}
+
+.peculiarities__info-text {
+    position: absolute;
+    top: 28px;
+    left: 258.25px;
+
+    width: 419.5px;
+    height: 240px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.14px;
+}
+
+.peculiarities__info-text ul {
+    margin-top: 15px;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+/*с помощью псевдоэлемента задаем размер маркера*/
+.peculiarities__info-text li::marker {
+    font-size: 10px;
+}
+
+.peculiarities__info-image {
+    margin-left: 50px;
+}
+
+.accessories__info {
+    position: relative;
+    margin-left: 41px;
+    margin-top: 123px;
+    width: 717px;
+    height: 255px;
+}
+
+.accessories__info-headset, .accessories__info-charger {
+    position: absolute;
+    width: 226px;
+    height: 255px;
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #222223E5;;
+
+}
+
+.accessories__info-charger {
+    left: 410px;
+}
+
+.accessories__info-headset {
+    left: 80px;
+}
+
+.where-buy__info {
+    padding-top: 90px;
+    width: 596px;
+    height: 330px;
+    margin-top: 85px;
+    margin-left: 102px;
+
+    background-image: url('../images/map.png');
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #252525;
+}
+
+.where-buy__info-btn {
+    margin-top: 50px;
+    margin-left: 168px;
+    width: 269px;
+    height: 58px;
+    border-radius: 30px;
+    border: none;
+    background-color: #222223E5;
+    opacity: 90%;
+
+    font-family: "Montserrat", sans-serif;
+    color: #F2F2F2;
+    font-size: 20px;
+    line-height: 24.38px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+    header {
+        min-width: 100%;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .logo-link {
+        margin-right: 15px;
+    }
+
+    .nav__link {
+        margin-right: 15px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    footer {
+        min-width: 100%;
+    }
+
+    .footer__nav {
+        width: 100%;
+    }
+
+    .footer__nav-logo {
+        padding-top: 10px;
+        width: 212px;
+        margin-left: 10px;
+    }
+
+    .footer__nav-link {
+        top: 25px;
+        left: 250px;
+        padding-top: 10px;
+        width: 250px;
+    }
+
+    .link {
+        display: inline;
+        margin-right: 80px;
+    }
+
+    .link:last-child {
+        margin-right: 0;
+    }
+
+    .footer__nav-mail {
+        top: 65px;
+        left: 250px;
+        padding-top: 10px;
+    }
+
+    .footer__nav-mail-link {
+        margin-top: 10px;
+    }
+
+    .xphone, .peculiarities, .accessories, .where-buy {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 400px;
+    }
+    .xphone__text {
+        top: 80px;
+        left: 20px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .xphone__text h1, .peculiarities h2, .accessories h2, .where-buy h2 {
+        font-size: 25px;
+        line-height: 27px;
+    }
+    
+    .xphone__text h1 {
+        margin-top: 30px;
+    }
+
+    .xphone__text p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .xphone__text-btn {
+        width: 130px;
+        height: 38px;
+    
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .xphone__image {
+        top: 50px;
+        left: 350px;
+        width: 150;
+        height: 330px;
+        
+    }
+
+    .xphone__image img {
+        height: 330px;
+    }
+
+    .peculiarities h2, .accessories h2, .where-buy h2{
+        margin-left: 20px;
+    }
+
+    .peculiarities__info {
+        width: 100%;
+        height: 296px;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .peculiarities__info-image {
+        margin-left: 30px;
+    }
+
+    .peculiarities__info-text {
+        top: 20px;
+        left: 220px;
+    
+        width: 330px;
+        height: 240px;
+    
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .peculiarities__info-text ul {
+        margin-top: 10px;
+    }
+
+    .accessories__info {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .accessories__info-charger {
+        left: 290px;
+        font-size: 13px;
+    }
+    
+    .accessories__info-headset {
+        left: 20px;
+        font-size: 13px;
+    }
+
+    .where-buy__info {
+        padding: 50px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    
+        text-align: center;
+    }
+
+    .where-buy__info-btn {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+        height: 58px;
+    }
+}

@@ -1,0 +1,465 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(burger.css);
+
+.body_fixed {
+    overflow: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.xphone__text h1, .xphone__text p, h2 {
+    color: #252525;
+}
+
+.xphone__text h1, .peculiarities h2, .accessories h2, .where-buy h2 {
+    font-size: 36px;
+    line-height: 43.88px;
+}
+
+.xphone__text h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.xphone__text p {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 29.26px;
+    font-weight: 400;
+}
+
+.xphone {
+    position: relative;
+    margin: 0 auto 50px;
+    width: 800px;
+    height: 600px;
+}
+
+.xphone-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+.peculiarities, .accessories, .where-buy {
+    position: relative;
+    margin: 0 auto 50px;
+    width: 800px;
+    height: 500px;
+}
+
+.xphone__image {
+    top: 68px;
+    left: 514px;
+    width: 203;
+    height: 464px;
+}
+
+.xphone__text {
+    margin-top: 90px;
+    margin-left: 30px;
+    width: 499px;
+    height: 280px;
+}
+
+.xphone__text-btn {
+    width: 184px;
+    height: 58px;
+    background-color: #222223E5;
+    border-radius: 35px;
+    border: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.peculiarities h2, .accessories h2, .where-buy h2{
+    margin-left: 83px;
+    font-weight: 400;  
+}
+
+.peculiarities__info-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 296px;
+    margin-top: 70px;
+}
+
+.peculiarities__info-text {
+    margin: 30px;
+    width: 419.5px;
+    height: 240px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.14px;
+}
+
+
+.peculiarities__info-text ul {
+    margin-top: 15px;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+/*с помощью псевдоэлемента задаем размер маркера*/
+.peculiarities__info-text li::marker {
+    font-size: 10px;
+}
+
+.peculiarities__info-image {
+    width: 200px;
+    background-image: url(../images/xphone_peculiarities.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50px;
+}
+
+.accessories__info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 0;
+    width: 717px;
+    height: 255px;
+}
+
+.accessories__info-headset, .accessories__info-charger {
+    width: calc(50% - 10px);
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #222223E5;;
+
+}
+
+.where-buy__info {
+    padding-top: 90px;
+    width: 596px;
+    height: 330px;
+    margin-top: 85px;
+    margin-left: 102px;
+
+    background-image: url('../images/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #252525;
+}
+
+.where-buy__info-btn {
+    margin-top: 50px;
+    margin-left: 168px;
+    width: 269px;
+    height: 58px;
+    border-radius: 30px;
+    border: none;
+    background-color: #222223E5;
+    opacity: 90%;
+
+    font-family: "Montserrat", sans-serif;
+    color: #F2F2F2;
+    font-size: 20px;
+    line-height: 24.38px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.burger__open-btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    header {
+        min-width: 100%;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .logo-link {
+        margin-right: 15px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    footer {
+        min-width: 100%;
+    }
+
+    .footer__nav, .accessories__info-wrapper {
+        width: 100%;
+    }
+
+    .footer__nav-logo {
+        padding-top: 10px;
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    .footer__nav-logo img {
+        width: 150px;
+    }
+
+    .footer__nav-link {
+        top: 25px;
+        left: 220px;
+        padding-top: 10px;
+        width: 250px;
+    }
+
+    .link {
+        display: inline;
+        margin-right: 50px;
+    }
+
+    .link:last-child {
+        margin-right: 0;
+    }
+
+    .footer__nav-mail {
+        top: 65px;
+        left: 180px;
+        padding-top: 10px;
+    }
+
+    .footer__nav-mail-link {
+        margin-top: 10px;
+    }
+
+    .xphone, .peculiarities, .accessories, .where-buy {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 400px;
+    }
+
+    .xphone__text {
+        top: 80px;
+        left: 20px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .xphone__text h1, .peculiarities h2, .accessories h2, .where-buy h2 {
+        font-size: 25px;
+        line-height: 27px;
+    }
+    
+    .xphone__text h1 {
+        margin-top: 30px;
+    }
+
+    .xphone__text p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .xphone__text-btn {
+        width: 130px;
+        height: 38px;
+    
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .xphone__image {
+        top: 50px;
+        left: 350px;
+        width: 150;
+        height: 330px;
+        
+    }
+
+    .xphone__image img {
+        height: 330px;
+    }
+
+    .peculiarities h2, .accessories h2, .where-buy h2{
+        margin-left: 20px;
+    }
+
+    .peculiarities__info-image {
+        margin-left: 30px;
+    }
+
+    .peculiarities__info-text {
+        top: 20px;
+        left: 220px;
+    
+        width: 330px;
+        height: 240px;
+    
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .peculiarities__info-text ul {
+        margin-top: 10px;
+    }
+
+    .accessories__info {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .accessories__info-charger {
+        left: 290px;
+        font-size: 13px;
+    }
+    
+    .accessories__info-headset {
+        left: 20px;
+        font-size: 13px;
+    }
+
+    .where-buy__info {
+        padding: 50px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    
+        text-align: center;
+    }
+
+    .where-buy__info-btn {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+        height: 58px;
+    }
+}
+
+@media (max-width: 599px) {
+    .accessories {
+        height: 550px;
+    }
+
+    .accessories__info-wrapper {
+        margin-top: 20px;
+        height: 500px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .accessories__info-headset, .accessories__info-charger {
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger__btn {
+        display: block;
+        z-index: 100;
+        width: 60px;
+        height: 30px;
+        margin-right: 70px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(158, 156, 156);
+        background-image: url(/images/fon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .burger-btn_open {
+        width: 70px;
+        height: 40px;
+        border: 2px solid white;
+        margin-right: 80px;
+        font-size: 16px;
+    }
+
+    
+}
+
+@media (max-width: 499px) {
+
+    .peculiarities h2, .accessories h2, .where-buy h2{
+        font-size: 18px;
+    }
+
+    .peculiarities {
+        height: 220px;
+    }
+
+    .peculiarities__info-wrapper {
+        margin: 10px 0 40px 20px;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 190px;
+    }
+
+    .peculiarities__info-text {
+        margin: 0;
+        width: 90%;
+        height: 180px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .accessories {
+        height: 590px;
+    }
+
+    .accessories__info-wrapper {
+        margin-top: 5px;
+        height: 570px;
+        row-gap: 5px;
+    }
+
+    .footer__nav-mail {
+        top: 90px;
+        left: 10px;
+        padding-top: 10px;
+    }
+
+    .footer__nav-logo {
+        font-size: 12px;
+    }
+
+    .footer__nav-link {
+        padding: 0;
+        left: 250px;
+        width: 90px;
+    }
+
+    .link {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
